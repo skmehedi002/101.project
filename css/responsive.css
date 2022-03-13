@@ -1,0 +1,262 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .menu-icons {
+        margin-left: 0;
+    }
+    .menu-icons a {
+        padding: 10px 0;
+    }
+    .carrotcut-text {
+        padding: 50px 0px 50px 0;
+    }
+    .single-blog {
+        margin: 15px 0;
+    }
+    .footer-text {
+        padding-right: 25px;
+    }
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .menu-icons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .menu-icons a i {
+        color: #000;  
+        padding-top: 0;
+    }
+    .banner-text p {
+        font-size: 17px;
+        padding-right: 100px;
+    }
+    .banner-side ul {
+        margin-top: -220px;
+    }
+    .swiper-button-next {
+        width: 300px;
+    }
+    .swiper-button-next span {
+        padding-right: 25px;
+    }
+    .single-service {
+        margin-top: 40px;
+    }
+    .carrotcut-sec::after {
+        display: none;
+    }
+    .single-blog .author-date h5 {
+        font-size: 15px;
+        margin-right: 15px;
+    }
+    .single-blog {
+        margin: 15px 0;
+    }
+    .contact-text img {
+        margin-right: 0;
+    }
+    .contact-form {
+        margin-top: 35px;
+    }
+    .footer-text {
+        padding-right: 20px;
+    }
+    .footer-content {
+        margin-left: 30px;
+    }
+    .foot-contact {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .menu-icons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .menu-icons a i {
+        color: #000;  
+        padding-top: 0;
+    }
+    .banner-sec {
+        padding-top: 135px;
+        padding-bottom: 300px;
+        height: auto;
+    }
+    .banner-text {
+        padding-right: 0;
+    }
+    .banner-text h4 {
+        font-size: 17px;
+    }
+    .banner-text h2 {
+        font-size: 32px;
+        line-height: 42px;
+    }   
+    .banner-text p {
+        font-size: 17px;
+        margin-top: 15px;
+    }   
+    .banner-sec .custom-btn {
+        margin-top: 10px;
+    }
+    .swiper-button-next {
+        width: 300px;
+        bottom: 135px;
+    }
+    .swiper-button-next span {
+        margin-left: 25px;
+        font-size: 18px;
+        padding-right: 35px;
+    }
+    .banner-side ul {
+        transform: rotate(0);
+        float: none;
+        text-align: left;
+        margin-top: 25px;
+    }
+    .who-text {
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    .right-big-img {
+        width: 67%;
+    }
+    .who-logo {
+        width: 78px;
+        bottom: -40px;
+    }
+    .right-big-img {
+        margin-bottom: 15px;
+        margin-left: 15px;
+    }
+    .left-big-img {
+        margin-right: 15px;
+    }
+    .single-blog .author-date h5 {
+        font-size: 14px;
+    }
+    .left-big-img img {
+        width: 190px;
+    }
+    .service-03 {
+        margin-top: 40px;
+    }
+    .single-consulting::before {
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        top: auto;
+        left: 0;
+    }
+    .carrotcut-sec::after {
+        display: none;
+    }
+    .carrotcut-text {
+        padding: 0;
+    }
+    .single-blog {
+        margin: 15px 0;
+    }
+    .contact-text p {
+        padding-right: 25px;
+    }
+    .contact-form {
+        margin-top: 35px;
+    }
+    .footer-content {
+        padding: 0;
+        margin: 0;
+        margin-top: 25px;
+    }
+    .footer-text {
+        padding-right: 0;
+    }
+    .copy-right-sec p {
+        font-size: 13px;
+    }
+    .contact-form {
+        padding: 30px 25px;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .menu-icons {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .menu-icons a i {
+        color: #000;  
+        padding-top: 0;
+    }
+    .banner-sec {
+        padding-top: 135px;
+    }
+    .banner-text {
+        padding-right: 0;
+    }
+    .banner-text h4 {
+        font-size: 20px;
+    }
+    .banner-text h2 {
+        font-size: 41px;
+        line-height: 48px;
+    }   
+    .banner-text p {
+        font-size: 17px;
+        margin-top: 15px;
+    }   
+    .banner-sec .custom-btn {
+        margin-top: 10px;
+    }
+    .who-text {
+        padding-right: 0;
+        padding-top: 20px;
+    }
+    .right-big-img {
+        width: 67%;
+    }
+    .who-logo {
+        width: 80px;
+    }
+    .service-03 {
+        margin-top: 40px;
+    }
+    .single-consulting::before {
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        top: auto;
+        left: 0;
+    }
+    .carrotcut-sec::after {
+        display: none;
+    }
+    .carrotcut-text {
+        padding: 0;
+    }
+    .single-blog {
+        margin: 15px 0;
+    }
+    .contact-text p {
+        padding-right: 25px;
+    }
+    .contact-form {
+        margin-top: 35px;
+    }
+    .footer-content {
+        padding: 0;
+        margin: 0;
+        margin-top: 25px;
+    }
+    .footer-text {
+        padding-right: 0;
+    }
+}

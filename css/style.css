@@ -1,0 +1,1045 @@
+/*
+* Template Name :  Responsive Bootstrap Landing Template
+* Version : 1.0.0
+* Created by : Mehedi002
+* File : Main css file
+*/
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../fonts/myriad-pro/MYRIADPRO-REGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed"),
+    url("../fonts/myriad-pro/MYRIADPRO-COND.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed Italic"),
+    url("../fonts/myriad-pro/MYRIADPRO-CONDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Light"),
+    url("../fonts/myriad-pro/MyriadPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold"),
+    url("../fonts/myriad-pro/MYRIADPRO-SEMIBOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold Italic"),
+    url("../fonts/myriad-pro/MYRIADPRO-SEMIBOLDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed"),
+    url("../fonts/myriad-pro/MYRIADPRO-BOLDCOND.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"),
+    url("../fonts/myriad-pro/MYRIADPRO-BOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Italic"),
+    url("../fonts/myriad-pro/MYRIADPRO-BOLDIT.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Myriad Pro Bold Condensed Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Bold Condensed Italic"),
+    url("../fonts/myriad-pro/MYRIADPRO-BOLDCONDIT.woff") format("woff");
+}
+
+body {
+  font-family: "Myriad Pro", sans-serif;
+  text-align: left;
+  font-size: 14px;
+  line-height: 17px;
+  word-wrap: break-word;
+  color: #666;
+  background-color: #1d1e20;
+  overflow-x: hidden;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Myriad Pro", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  left: -1px;
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*======================
+        Helper
+========================*/
+@media (min-width: 1400px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1170px;
+  }
+}
+.custom-btn {
+  font-size: 18px;
+  color: #f0c26a;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  padding-top: 12px;
+  text-align: center;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+.custom-btn:hover {
+  background-color: #f0c26a;
+  color: #000;
+}
+.title {
+  margin-bottom: 65px;
+}
+.title h2 {
+  font-size: 26px;
+  line-height: 64px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #ebebeb;
+  text-transform: uppercase;
+  position: relative;
+}
+.title h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 90px;
+  height: 5px;
+  background: url("../image/title-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.view-all-btn {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ebebeb;
+  position: relative;
+  line-height: 64px;
+  display: inline-block;
+  margin-top: 45px;
+}
+.view-all-btn::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  bottom: 0;
+  height: 3px;
+  width: 55px;
+  background: url("../image/view-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.view-all-btn::after {
+  content: "";
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: url("../image/view-bg.png") no-repeat;
+  background-size: 100% 100%;
+  transition: 0.5s;
+}
+.view-all-btn:hover:after {
+  left: 3px;
+  width: 55px;
+  border-left: 2px solid #2c2c2c;
+}
+.view-all-btn:hover {
+  color: #f0c26a;
+}
+.menu-icons {
+  margin-top: 20px;
+  margin-left: 15px;
+  padding-left: 10px;
+  position: relative;
+}
+.menu-icons::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 1px;
+  height: 30px;
+  background: #fff;
+}
+.menu-icons a {
+  padding: 10px 5px;
+  float: left;
+  color: #fff;
+}
+
+/*====================
+      Banner CSS
+======================*/
+.swiper-slide-01 .banner-sec {
+  height: 680px;
+  background: url("../image/banner-bg-01.png") no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 185px;
+}
+.swiper-slide-02 .banner-sec {
+  height: 680px;
+  background: url("../image/banner-bg-01.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 185px;
+}
+.banner-sec::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+.banner-text {
+  position: relative;
+  padding-right: 75px;
+  z-index: 10;
+}
+.banner-text h4 {
+  font-size: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.banner-text h2 {
+  font-size: 56px;
+  line-height: 64px;
+  color: #ffffff;
+}
+.banner-text p {
+  font-size: 18px;
+}
+.swiper-slide-01 {
+  background: url(../image/banner-bg-01.png) no-repeat center center;
+  background-size: cover;
+}
+.swiper-slide-02 {
+  background: url(../image/banner-bg-01.png) no-repeat center center;
+  background-size: cover;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.swiper-button-next {
+  height: 130px;
+  width: 350px;
+  position: absolute;
+  bottom: 30px;
+  top: auto;
+  right: 0;
+  justify-content: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  align-items: normal;
+}
+.swiper-button-next img {
+  height: 100px;
+  width: 80px;
+}
+.swiper-button-next span {
+  color: #99bbee;
+  margin-left: 40px;
+  font-size: 18px;
+  line-height: 26px;
+  padding-right: 75px;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.swiper-button-next:after {
+  font-size: 20px;
+  margin-top: 40px;
+}
+.swiper-button-next::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  top: -20px;
+  border-left: 1px solid #99bbee;
+  border-top: 1px solid #99bbee;
+  transition: 0.5s;
+}
+.swiper-button-next:hover::before {
+  width: 100%;
+  height: 115%;
+}
+.swiper-button-prev {
+  display: none;
+}
+.banner-side ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  position: relative;
+  z-index: 999;
+  transform: rotate(90deg);
+  margin-top: 150px;
+}
+.banner-side ul li {
+  display: inline-block;
+}
+.banner-side ul li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ebebeb;
+  padding: 0 5px;
+}
+.scroll-down {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  bottom: 60px;
+  height: 40px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 25px;
+  z-index: 9999;
+}
+.scroll-down::before {
+  animation: scrollDownAnimation 2s infinite;
+  background-color: #fff;
+  border-radius: 100%;
+  content: "";
+  height: 5px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 5px;
+  z-index: 9999;
+}
+@-moz-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes scrollDownAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    transform: translate(0, 25px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*====================
+      Who CSS
+======================*/
+.who-sec {
+  position: relative;
+  margin-top: 60px;
+}
+.who-sec::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 285px;
+  height: 500px;
+  background: url("../image/who-left-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.who-text {
+  padding-top: 40px;
+  padding-right: 50px;
+}
+.who-text .title {
+  margin-bottom: 40px;
+}
+
+.right-img-grp {
+  position: relative;
+}
+.who-logo {
+  display: inline-block;
+  position: relative;
+  bottom: -70px;
+  left: 0;
+}
+.right-big-img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.right-big-img::before,
+.left-big-img::before,
+.left-small-img::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.right-big-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 90px;
+  height: 5px;
+  background: url("../image/title-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.left-big-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 90px;
+  height: 5px;
+  background: url("../image/title-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.left-big-img {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+.left-big-img img {
+  width: 220px;
+}
+.left-img-grp {
+  position: relative;
+}
+.left-small-img {
+  position: relative;
+  display: inline-block;
+}
+.left-small-img {
+  position: absolute;
+  top: 0;
+}
+/*====================
+      service CSS
+======================*/
+.service-sec {
+  margin-top: 75px;
+}
+.single-service {
+  background: #222222;
+  padding: 45px 40px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.single-service p {
+  margin-bottom: 0;
+}
+.line-break {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: block;
+}
+.service-01 h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #99bbee;
+}
+.service-01::before {
+  content: "";
+  background: #99bbee;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.service-02 h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0166b1;
+}
+.service-02 {
+  margin-top: 40px;
+}
+.service-02::before {
+  content: "";
+  background: #0166b1;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.service-03 h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c39355;
+}
+.service-03::before {
+  content: "";
+  background: #c39355;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.line-break {
+  margin-top: 30px;
+  display: block;
+}
+/*====================
+     consulting CSS
+======================*/
+.consulting-sec {
+  position: relative;
+  margin: 75px 0;
+}
+.consulting-sec::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 285px;
+  height: 500px;
+  background: url("../image/who-left-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.consulting-sec .title {
+  margin-bottom: 70px;
+}
+.single-consulting {
+  height: 475px;
+  position: relative;
+  padding: 50px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.single-consulting::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 1s;
+}
+
+.single-consulting:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.single-consulting::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5%;
+  width: 1px;
+  height: 90%;
+  background: #fff;
+}
+.consulting-sec .col-xl-3 {
+  padding: 0;
+  margin: 0;
+}
+.consulting-01 {
+  background: url("../image/con-01.png") no-repeat;
+  background-size: 101% 101%;
+}
+.consulting-02 {
+  background: url("../image/con-02.png") no-repeat;
+  background-size: 101% 101%;
+}
+.consulting-03 {
+  background: url("../image/con-03.png") no-repeat;
+  background-size: 101% 101%;
+}
+.consulting-04 {
+  background: url("../image/con-04.png") no-repeat;
+  background-size: 101% 101%;
+}
+.single-consulting .bottom-text {
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  z-index: 99;
+  padding: 30px;
+  transition: 1s;
+}
+.single-consulting .top-text {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  z-index: 99;
+  padding: 30px;
+  transition: 0.5s;
+}
+
+.single-consulting:hover .top-text {
+  bottom: auto;
+  top: 0;
+  background: #2c2c2c;
+  width: 100%;
+}
+.single-consulting .bottom-text h6 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: 0.5s;
+}
+.single-consulting .bottom-text h5 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.single-consulting .top-text h6 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.single-consulting .top-text h5 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+.single-consulting .bottom-text p {
+  display: none;
+  transition: 0.5s;
+}
+.single-consulting:hover {
+  background-size: 105% 105%;
+}
+.single-consulting:hover .bottom-text h6 {
+  display: none;
+}
+.single-consulting:hover .bottom-text h5 {
+  display: none;
+}
+
+.single-consulting:hover .bottom-text p {
+  display: block;
+  transition: 1s;
+}
+/*====================
+      carrotcut CSS
+======================*/
+.carrotcut-sec {
+  padding-top: 75px;
+  padding-bottom: 70px;
+  position: relative;
+  margin-top: 50px;
+}
+.carrotcut-sec::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 50%;
+  height: 500px;
+  background: url("../image/carrotcut.png") no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  border-radius: 14px 0 0 14px;
+}
+.carrotcut-sec::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 285px;
+  height: 500px;
+  background: url("../image/who-left-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.carrotcut-text {
+  padding: 60px 35px 60px 0;
+}
+.carrotcut-text a.custom-btn {
+  background: #000;
+  margin-top: 30px;
+}
+
+.carrotcut-text a.custom-btn:hover {
+  background: #f0c26a;
+}
+/*====================
+      Blog CSS
+======================*/
+.blog-sec {
+  margin-bottom: 100px;
+}
+.single-blog {
+  background-color: #222222;
+}
+.single-blog .blog-image {
+  position: relative;
+}
+.single-blog .blog-image img {
+  height: 240px;
+  width: 100%;
+}
+.single-blog .blog-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.single-blog .blog-text {
+  padding: 30px 25px 25px 25px;
+}
+.single-blog .category ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.single-blog .category ul li {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+.single-blog .category ul li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  background: #ebebeb;
+  right: -10px;
+  top: 2px;
+}
+.single-blog .category ul li:last-child::before {
+  display: none;
+}
+.single-blog .category ul li a {
+  font-size: 14px;
+  color: #ebebeb;
+}
+.single-blog .author-date h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ebebeb;
+  margin-top: 10px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.single-blog .author-date h5:last-child {
+  margin-right: 0;
+}
+.single-blog .author-date h5 a {
+  color: #ebebeb;
+}
+.single-blog .blog-title {
+  font-size: 22px;
+  line-height: 32px;
+  color: #ebebeb;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.single-blog a.custom-btn {
+  display: block;
+  border: 1px solid #f0c26a;
+  margin-top: 30px;
+}
+.single-blog a.custom-btn:hover {
+  background: #f0c26a;
+  color: #000;
+}
+
+/*====================
+    Contact CSS
+  ======================*/
+.contact-sec {
+  margin-bottom: 75px;
+  position: relative;
+}
+.contact-sec::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../image/form-right.png) no-repeat;
+  background-size: contain;
+  background-position: center right;
+}
+.contact-text {
+  background: #0e0f10;
+  padding-top: 35px;
+  padding-bottom: 65px;
+  border-radius: 0 14px 14px 0;
+  position: relative;
+  margin-top: 25px;
+}
+.contact-text::before {
+  content: "";
+  position: absolute;
+  left: -200%;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  background: #0e0f10;
+}
+.contact-text .title {
+  margin-bottom: 0;
+}
+.contact-text img {
+  margin-bottom: 50px;
+  margin-right: -25px;
+  position: relative;
+}
+.contact-text h3 {
+  font-style: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.contact-text p {
+  padding-right: 75px;
+  margin-bottom: 0;
+}
+
+.contact-form {
+  padding: 50px 40px;
+  border: 1px solid #2c2c2c;
+  border-radius: 14px;
+  background: #1d1d1d;
+  position: relative;
+}
+
+.contact-form a.custom-btn {
+  display: block;
+  border: 1px solid #f0c26a;
+  margin-top: 20px;
+}
+.contact-form a.custom-btn:hover {
+  background: #f0c26a;
+  color: #000;
+}
+.contact-form label {
+  font-size: 16px;
+  color: #fff;
+}
+.contact-form .form-control {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #2c2c2c;
+  box-shadow: none;
+  color: #707070;
+}
+.contact-form select {
+  color: #707070;
+  background: transparent;
+  border: 1px solid #2c2c2c;
+  box-shadow: none;
+}
+.contact-form .form-select:focus {
+  box-shadow: none;
+  border: 1px solid #2c2c2c;
+}
+/*====================
+      Footer CSS
+======================*/
+.footer-sec {
+  background-color: #0e0f10;
+  padding: 100px 0;
+}
+.footer-text {
+  padding-right: 75px;
+}
+.footer-text p {
+  font-size: 16px;
+  color: #b6b6b6;
+}
+.footer-content {
+  margin-top: 70px;
+  margin-left: 50px;
+}
+.footer-content h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0166b1;
+  margin-bottom: 25px;
+}
+.footer-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-content ul li {
+  margin-bottom: 20px;
+}
+.footer-content ul li a {
+  font-size: 16px;
+  color: #b6b6b6;
+  font-weight: 400;
+}
+.foot-contact {
+  padding-left: 70px;
+}
+.foot-contact ul li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+}
+.foot-contact img {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+  float: left;
+}
+.foot-contact a {
+  float: left;
+  line-height: 25px;
+}
+/*====================
+      Copy Right CSS
+======================*/
+.copy-right-sec {
+  background-color: #000000;
+  padding: 20px 0;
+}
+.copy-right-sec p {
+  font-family: "Myriad Pro Light";
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}

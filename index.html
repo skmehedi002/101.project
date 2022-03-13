@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Techlastic</title>
+  <link rel="shortcut icon" href="image/logo/icon.png" type="image/x-icon">
+
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+
+  <!--Swiper Slider CSS-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.css'><link rel="stylesheet" href="./style.css">
+
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/menu.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+
+</head>
+
+<body>
+  <div class="site-wrapper overflow-hidden position-relative">
+    <!--Site Header Area -->
+    <header class="site-header site-header--menu-right landing-1-menu site-header--absolute">
+      <div class="container">
+        <nav class="navbar site-navbar">
+          <!-- Brand Logo-->
+          <div class="brand-logo">
+            <a href="#">
+              <!-- light version logo (logo must be black)-->
+              <img src="image/logo/logo-white.png" alt="" class="light-version-logo">
+              <!-- Dark version logo (logo must be White)-->
+              <!-- <img src="image/logo/logo-white.png" alt="" class="dark-version-logo"> -->
+            </a>
+          </div>
+          <div class="menu-block-wrapper">
+            <div class="menu-overlay"></div>
+            <nav class="menu-block" id="append-menu-header">
+              <div class="mobile-menu-head">
+                <div class="go-back">
+                  <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="current-menu-title"></div>
+                <div class="mobile-menu-close">&times;</div>
+              </div>
+              <ul class="site-menu-main">
+                <li class="nav-item">
+                  <a href="#banner" class="nav-link-item active">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#who" class="nav-link-item">Who we are</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#service" class="nav-link-item">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#consulting" class="nav-link-item">Consulting</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#carrotcut" class="nav-link-item">Carrotcut</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#blog" class="nav-link-item">Blogs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link-item">Contact Us</a>
+                </li>
+                <div class="menu-icons">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- mobile menu trigger -->
+          <div class="mobile-menu-trigger">
+            <span></span>
+          </div>
+          <!--/.Mobile Menu Hamburger Ends-->
+        </nav>
+      </div>
+    </header>
+    <!-- navbar- -->
+
+    <!-- Banner Area Start -->
+    <div class="swiper mySwiper" id="banner">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-01" data-thumb="image/sm-bg.png">
+          <div class="banner-sec">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-7 col-lg-8">
+                  <div class="banner-text">
+                    <h4>CarrotCut®</h4>
+                    <h2>Work Management Software</h2>
+                    <p>Full-Fledged SaaS & Mobile Application Work Management Solution; supporting Task Management, Project Management, & Business Intelligence functions within the organization! </p>
+                    <a href="#" class="custom-btn">Discover More</a>
+                  </div>
+                </div>
+                <div class="col-xl-5 col-lg-4">
+                  <div class="banner-side">
+                    <ul>
+                      <li><a href="#">CarrotCut®</a></li>
+                      <li><a href="#">Learn More</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <a href="#who" class="scroll-down"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-02" data-thumb="image/banner-bg-01.jpg" >
+          <div class="banner-sec">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-7 col-lg-8">
+                  <div class="banner-text">
+                    <h4>CarrotCut®</h4>
+                    <h2>Work Management Software</h2>
+                    <p>Full-Fledged SaaS & Mobile Application Work Management Solution; supporting Task Management, Project Management, & Business Intelligence functions within the organization! </p>
+                    <a href="#" class="custom-btn">Discover More</a>
+                  </div>
+                </div>
+                <div class="col-xl-5 col-lg-4">
+                  <div class="banner-side">
+                    <ul>
+                      <li><a href="#">CarrotCut®</a></li>
+                      <li><a href="#">Learn More</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <a href="#who" class="scroll-down"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next">
+        <div class="br-animation"></div>
+        <img src="../" alt=""> 
+        <span>Next Slide Title written here</span>
+      </div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- Banner Area End -->
+
+    <!-- Who Area Start -->
+    <div class="who-sec" id="who">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="who-text">
+              <div class="title">
+                <h2>WHO WE ARE?</h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+              <a href="#" class="custom-btn">Discover More</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="right-img-grp text-end">
+                <div class="who-logo">
+                  <img src="image/logo-br.png" alt="Photo">
+                </div>
+                <div class="right-big-img" >
+                  <img src="image/who-rgt-big.png" alt="Photo">
+                </div>
+              </div>
+              <div class="left-img-grp ">
+                <div class="left-big-img">
+                  <img src="image/who-left-big.png" alt="Photo">
+                </div>
+                <div class="left-small-img">
+                  <img src="image/who-left-smll.png" alt="Photo">
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Who Area End -->
+
+    <!-- Service Area Start -->
+    <div class="service-sec" id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="title">
+              <h2>Services</h2>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-service service-01">
+              <h3>Training Services</h3>
+              <p>Full-Fledged SaaS & Mobile Application Work Management Solution; supporting</p>
+              <div class="line-break"><img src="image/br-01.png" alt="br"></div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-service service-02">
+              <h3>Implementation Service</h3>
+              <p>Full-Fledged SaaS & Mobile Application Work Management Solution; supporting</p>
+              <div class="line-break"><img src="image/br-02.png" alt="br"></div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="single-service service-03">
+              <h3>Outsourcing Services</h3>
+              <p>Full-Fledged SaaS & Mobile Application Work Management Solution; supporting</p>
+              <div class="line-break"><img src="image/br-03.png" alt="br"></div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            </div>
+          </div>
+          <div class="col-12 text-end">
+            <a href="#" class="view-all-btn">View All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service Area End -->
+
+    <!-- Consulting Area Start -->
+    <div class="consulting-sec" id="consulting">
+      <div class="container">
+        <div class="col-12">
+          <div class="title">
+            <h2>Consulting</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-md-6">
+            <div class="single-consulting consulting-01">
+              <div class="top-text">
+                <h6>Consulting</h6>
+                <h5>Supply Chain</h5>
+              </div>
+              <div class="bottom-text">
+                <h6>Consulting</h6>
+                <h5>Supply Chain</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="single-consulting consulting-02">
+              <div class="top-text">
+                <h6>Consulting</h6>
+                <h5>Project Management Portfolio</h5>
+              </div>
+              <div class="bottom-text">
+                <h6>Consulting</h6>
+                <h5>Project Management Portfolio</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="single-consulting consulting-03">
+              <div class="top-text">
+                <h6>Consulting</h6>
+                <h5>Businesses</h5>
+              </div>
+              <div class="bottom-text">
+                <h6>Consulting</h6>
+                <h5>Businesses</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6">
+            <div class="single-consulting consulting-04">
+              <div class="top-text">
+                <h6>Consulting</h6>
+                <h5>Digital Marketing</h5>
+              </div>
+              <div class="bottom-text">
+                <h6>Consulting</h6>
+                <h5>Digital Marketing</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-end">
+            <a href="#" class="view-all-btn">View All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Consulting Area End -->
+
+    <!-- Carrotcut Area Start -->
+    <div class="carrotcut-sec" id="carrotcut">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="carrotcut-text">
+              <div class="title">
+                <h2>carrotcut</h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              <a href="#" class="custom-btn">Try it now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carrotcut Area End -->
+
+    <!-- Blog Area Start -->
+    <div class="blog-sec" id="blog">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="title">
+              <h2>Blogs</h2>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-image">
+                <img src="image/blog/blog-01.png" alt="Photo">
+              </div>
+              <div class="blog-text">
+                <div class="category">
+                  <ul>
+                    <li><a href="#">Trends</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="author-date">
+                  <h5>By <a href="#">Patrick Augsten</a></h5>
+                  <h5><a href="#">On august 26, 2022</a></h5>
+                </div>
+                <h3 class="blog-title">Best practice for going facebook business live</h3>
+                <a href="#" class="custom-btn">Discover More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-image">
+                <img src="image/blog/blog-02.png" alt="Photo">
+              </div>
+              <div class="blog-text">
+                <div class="category">
+                  <ul>
+                    <li><a href="#">Trends</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="author-date">
+                  <h5>By <a href="#">Patrick Augsten</a></h5>
+                  <h5><a href="#">On august 26, 2022</a></h5>
+                </div>
+                <h3 class="blog-title">Best practice for going facebook business live</h3>
+                <a href="#" class="custom-btn">Discover More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="single-blog">
+              <div class="blog-image">
+                <img src="image/blog/blog-03.png" alt="Photo">
+              </div>
+              <div class="blog-text">
+                <div class="category">
+                  <ul>
+                    <li><a href="#">Trends</a></li>
+                    <li><a href="#">Digital Marketing</a></li>
+                  </ul>
+                </div>
+                <div class="author-date">
+                  <h5>By <a href="#">Patrick Augsten</a></h5>
+                  <h5><a href="#">On august 26, 2022</a></h5>
+                </div>
+                <h3 class="blog-title">Best practice for going facebook business live</h3>
+                <a href="#" class="custom-btn">Discover More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-end">
+            <a href="#" class="view-all-btn">View All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog Area End -->
+
+    <!-- Contact Area Start -->
+    <div class="contact-sec" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="contact-text">
+              <div class="title">
+                <h2>Be in touch!</h2>
+              </div>
+              <div class="text-end">
+                <img src="image/contact-logo.png" alt="Photo">
+              </div>
+              <h3>Keep in touch with us</h3>
+              <p>Feel free to keep in touch with us, if you have any questions or inquires that may be able to share with us in order to make sure that all your questions is been answered.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <form action="">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="write your name">
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="write your email">
+                </div>
+                <div class="mb-3">
+                  <label for="select" class="form-label">Service</label>
+                  <select class="form-select" id="select" aria-label="Default select example">
+                    <option selected>Choose service</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="mb-2">
+                  <label for="comment" class="form-label">Share your thoughts</label>
+                  <textarea class="form-control" id="comment" rows="6" placeholder="What do you want to tell us about?"></textarea>
+                </div>
+                <a href="#" class="custom-btn">Send</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <!-- Contact Area End -->
+
+    <!--Footer Start-->
+    <footer class="footer-sec">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-text">
+              <a href="#">
+                <img src="image/logo/icon.png" alt="Photo">
+              </a>
+              <p>Consulting experiences to utilize project management, Business & Software Development practices and deliver value at each step along the way.</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="footer-content">
+              <h4>Site Map</h4>
+              <ul>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Carrotcut</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-6">
+            <div class="footer-content">
+              <br>
+              <br>
+              <br>
+              <ul>
+                <li><a href="#">Who we are?</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Consulting</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-content foot-contact">
+              <h4>Contact Info</h4>
+              <ul>
+                <li><img src="image/icon/map.png" alt="Icon"><a href="#">2 St. Stainford, Walk Garas, SE2, Jordan</a></li>
+                <li><img src="image/icon/dail.png" alt="Icon"><a href="#">+962 658 180 46</a></li>
+                <li><img src="image/icon/mail.png" alt="Icon"><a href="#">info@Techlastic.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer End-->
+
+    <!-- Copy Right Start -->
+    <div class="copy-right-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <p>All Rights Reserved</p>
+          </div>
+          <div class="col-7 text-end">
+            <p>Techlastic All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copy Right End -->
+
+
+ 
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./plugins/bootstrap/popper.min.js"></script>
+  <script src="./plugins/bootstrap/bootstrap.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.6/swiper-bundle.min.js'></script>
+  <script src="./plugins/menu/menu.js"></script>
+
+  <script>
+    $(window).scroll(function(){
+      if ($(window).scrollTop() >= 680) {
+          $('.site-header--absolute').addClass('fixed-header');
+      }
+      else {
+          $('.site-header--absolute').removeClass('fixed-header');
+      }
+    });
+  </script>
+  <script>
+    ;(function($){
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on:{
+          slideChange:function(){
+            getNextThumb();
+          }
+        }
+      });
+      
+      function getNextThumb(){
+        var getThumb = $(".mySwiper .swiper-slide-active").next('.swiper-slide').attr('data-thumb');
+        $('.swiper-button-next img').attr('src', getThumb);
+      } getNextThumb();
+      
+    })(jQuery)
+  </script>
+
+
+</body>
+
+</html>
